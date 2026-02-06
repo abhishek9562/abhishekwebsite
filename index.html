@@ -1,11 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="sharingan (1).ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abhishek | BCA Graduate | ML & AI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* background-image:url('https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg');
+           background-repeat: no-repeat; */
+
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HERO SECTION */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: #fde047;
+        }
+
+        .hero p {
+            margin: 20px auto;
+            font-size: 1.2rem;
+            max-width: 700px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: #0f172a;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .hero .btn:hover {
+            background: #020617;
+        }
+
+        /* PROFILE IMAGE – BLENDED */
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+
+            /* Soft blend */
+            -webkit-mask-image: radial-gradient(circle, black 65%, transparent 100%);
+            mask-image: radial-gradient(circle, black 65%, transparent 100%);
+
+            /* Glow */
+            box-shadow:
+                0 0 25px rgba(253, 224, 71, 0.5),
+                0 0 60px rgba(56, 189, 248, 0.4);
+
+            transition: transform 0.4s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 900px;
+            font-size: 1.05rem;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 25px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card h3 {
+            color: #fde047;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        footer a {
+            color: #38bdf8;
+            margin: 0 10px;
+        }
+
+  /* Full-page background video */
+.bg-video {
+    position: fixed;        /* stays in place while scrolling */
+    top: 0;                 /* start at top */
+    left: 0;                /* start at left */
+    width: 100vw;           /* full viewport width */
+    height: 100vh;          /* full viewport height */
+    object-fit: cover;      /* fill the screen without distortion */
+    object-position: center; /* control which part is visible */
+    z-index: -1;            /* behind content */
+}
+
+/* Optional: adjust the visible part of the video */
+.bg-video {
+    object-position: center 40%; /* move vertical focus down */
+}
+
+/* Overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5); /* semi-transparent dark overlay */
+    z-index: 0; /* below content, above video */
+}
+
+/* Make content appear above video */
+.hero, section, footer {
+    position: relative;
+    z-index: 1;
+}
+
+    </style>
 </head>
 <body>
-    <h1>abhishek</h1>
+    <video autoplay muted loop playsinline class="bg-video">
+    <source src="C:\myapp\IShowSpeed_x_Naruto_-_Speed_in_Konoha_EDIT_4K_2160P.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+    <!-- HERO -->
+    <header>
+        <div class="hero">
+            <img src="https://www.bing.com/th/id/OIP.AFc6sr6bSQAiIaAHWLQfVwHaHa?w=187&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Abhishek" class="profile-img">
+
+            <h1>Hi, I'm <span><marquee behavior="" direction="">Abhishek</marquee></span></h1>
+
+            <p>
+                BCA Graduate | Fresher | Passionate about Machine Learning,
+                Artificial Intelligence, and Cloud Computing using Google Cloud Platform.
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a BCA graduate with a strong foundation in Machine Learning,
+            Artificial Intelligence, and Cloud Computing. I enjoy building
+            data-driven solutions using Python and deploying scalable
+            applications on Google Cloud Platform.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python, Java, C, SQL</p>
+            </div>
+            <div class="card">
+                <h3>Machine Learning & AI</h3>
+                <p>Supervised & Unsupervised Learning, Data Analysis</p>
+            </div>
+            <div class="card">
+                <h3>Cloud & Tools</h3>
+                <p>Google Cloud Platform, Git, Jupyter, VS Code</p>
+            </div>
+            <div class="card">
+                <h3>Web Basics</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>ML Prediction System</h3>
+                <p>
+                    Built a supervised ML model using Python and Scikit-Learn
+                    with data preprocessing, training, and evaluation.
+                </p>
+            </div>
+            <div class="card">
+                <h3>AI-Based Application</h3>
+                <p>
+                    Developed an AI-based solution to automate decision-making
+                    and improve efficiency.
+                </p>
+            </div>
+            <div class="card">
+                <h3>GCP Deployment</h3>
+                <p>
+                    Deployed ML models on Google Cloud Platform for scalable
+                    and accessible cloud inference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Abhishek |
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="mailto:yourmail@gmail.com">Email</a>
+        </p>
+    </footer>
+
 </body>
 </html>
